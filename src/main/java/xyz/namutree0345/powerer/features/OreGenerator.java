@@ -18,7 +18,7 @@ public class OreGenerator implements Listener {
             pl(event, Material.COAL);
         }
         if(checkXyzBlock(event.getBlock().getLocation(), 23, 70, -14)) {
-            pl(event, Material.IRON_INGOT);
+            pl(event, Material.IRON_ORE);
         }
 
     }
