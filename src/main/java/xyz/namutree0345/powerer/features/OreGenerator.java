@@ -20,6 +20,9 @@ public class OreGenerator implements Listener {
         if(checkXyzBlock(event.getBlock().getLocation(), 23, 70, -14)) {
             pl(event, Material.IRON_ORE);
         }
+        if(checkXyzBlock(event.getBlock().getLocation(), 73, 69, 3)) {
+            pl(event, Material.DIAMOND);
+        }
 
     }
 
