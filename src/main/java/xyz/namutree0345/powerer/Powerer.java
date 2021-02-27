@@ -8,9 +8,4 @@ public final class Powerer extends JavaPlugin {
     public void onEnable() {
         System.out.println("Powerer Enabled!");
     }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
 }
