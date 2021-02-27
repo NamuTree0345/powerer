@@ -1,0 +1,4 @@
+name: powerer
+version: ${project.version}
+main: xyz.namutree0345.powerer.Powerer
+api-version: 1.16
