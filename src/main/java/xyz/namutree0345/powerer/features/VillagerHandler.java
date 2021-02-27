@@ -71,7 +71,7 @@ public class VillagerHandler implements Listener {
                             plr.sendMessage(ChatColor.GOLD + "<하늘섬 주민> " + ChatColor.RESET + "처음 오신것 같은데, 가이드 북을 드릴게용. 안받으신분은 저를 우클릭해서 받으세용.");
                             hanulsumjumin1 = false;
                         }
-                    }, 1000);
+                    }, 20);
                 }
             }
         }
