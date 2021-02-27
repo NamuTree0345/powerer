@@ -6,8 +6,7 @@ public final class Powerer extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        System.out.println("Powerer Enabled!");
     }
 
     @Override
