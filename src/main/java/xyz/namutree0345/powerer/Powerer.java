@@ -15,6 +15,7 @@ public final class Powerer extends JavaPlugin {
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new OreGenerator(), this);
         getServer().getPluginManager().registerEvents(new BuyHandlerAbility(), this);
+        getServer().getPluginManager().registerEvents(new Dead(), this);
         getServer().getPluginManager().registerEvents(new VillagerHandler(this), this);
         System.out.println("Powerer Enabled!");
     }
