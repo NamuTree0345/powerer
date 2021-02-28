@@ -18,6 +18,7 @@ public class Dead implements Listener {
                     @Override
                     public void run() {
                         event.getEntity().teleport(Objects.requireNonNull(event.getEntity().getBedSpawnLocation()));
+                        event.getEntity().setGameMode(GameMode.SURVIVAL);
                         event.getEntity().sendTitle(ChatColor.GOLD + "리스폰!", "", 5, 60, 5);
                     }
                 }, 60L);
