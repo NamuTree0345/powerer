@@ -9,9 +9,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractAtEntityEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.plugin.java.JavaPlugin;
+import xyz.namutree0345.powerer.Abilities;
+import xyz.namutree0345.powerer.AbilityShopGui;
+import xyz.namutree0345.powerer.Powerer;
 
 public class VillagerHandler implements Listener {
 
@@ -40,7 +44,17 @@ public class VillagerHandler implements Listener {
     }
 
     @EventHandler
+    public void playerJoin(PlayerJoinEvent event) {
+        if(!Powerer.abilitiesHashMap.containsKey(event.getPlayer().getUniqueId()))
+            Powerer.abilitiesHashMap.put(event.getPlayer().getUniqueId(), new Abilities());
+    }
+
+    @EventHandler
     public void entityInteract(PlayerInteractAtEntityEvent event) {
+        if(event.getRightClicked().getCustomName().equals(ChatColor.GOLD + "능력 상점")) {
+            event.setCancelled(true);
+            new AbilityShopGui().open(event.getPlayer());
+        }
         if(!hanulsumjumin1) {
             if(event.getRightClicked().getCustomName().equals("하늘섬 주민")) {
                 event.setCancelled(true);
