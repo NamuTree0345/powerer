@@ -40,11 +40,11 @@ public class AbilityShopGui {
         for (int i = 0; i < 9; i++) {
             inventory.setItem(i, blankItem(Material.BLUE_STAINED_GLASS_PANE));
         }
-        inventory.setItem(20, newItem(Material.RABBIT_FOOT, ChatColor.GOLD + "토끼 점프", listOf("더블 점프를 추가해줍니다. 더 높이 뛸 수 있습니다.")));
-        inventory.setItem(22, newItem(Material.SPIDER_EYE, ChatColor.GOLD + "거미줄", listOf("벽을 탈 수 있습니다.")));
-        inventory.setItem(24, newItem(Material.PACKED_ICE, ChatColor.GOLD + "차가운 얼음", listOf("몹을 얼릴 수 있습니다. (움직이지 못하게 하는것)")));
-        inventory.setItem(30, newItem(Material.ZOMBIE_HEAD, ChatColor.GOLD + "불사의 좀비", listOf("연속 2번 살아날 수 있습니다.")));
-        inventory.setItem(32, newItem(Material.REDSTONE, ChatColor.GOLD + "헐크", listOf("돌을 부술때 부순 돌의 양이 2배가 되고 공격력이 2배가 됩니다.")));
+        inventory.setItem(20, newItem(Material.RABBIT_FOOT, ChatColor.GOLD + "토끼 점프", listOf("더블 점프를 추가해줍니다. 더 높이 뛸 수 있습니다.", "다이아몬드 1세트 + 30개")));
+        inventory.setItem(22, newItem(Material.SPIDER_EYE, ChatColor.GOLD + "거미줄", listOf("벽을 탈 수 있습니다.", "다이아몬드 2세트 + 30개")));
+        inventory.setItem(24, newItem(Material.PACKED_ICE, ChatColor.GOLD + "차가운 얼음", listOf("몹을 얼릴 수 있습니다. (움직이지 못하게 하는것)", "다이아몬드 2세트")));
+        inventory.setItem(30, newItem(Material.ZOMBIE_HEAD, ChatColor.GOLD + "불사의 좀비", listOf("연속 2번 살아날 수 있습니다.", "다이아몬드 1세트")));
+        inventory.setItem(32, newItem(Material.REDSTONE, ChatColor.GOLD + "헐크", listOf("돌을 부술때 부순 돌의 양이 2배가 되고 공격력이 2배가 됩니다.", "다이아몬드 3세트")));
         for (int i = 45; i < 54; i++) {
             inventory.setItem(i, blankItem(Material.BLUE_STAINED_GLASS_PANE));
         }
